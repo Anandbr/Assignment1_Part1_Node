@@ -3,7 +3,7 @@ import TuitController from "./controllers/TuitController";
 import UserController from "./controllers/UserController";
 import mongoose from "mongoose";
 
-const dbconnect = 'mongodb+srv://anand:anand@cluster0.pstb3.mongodb.net/FSEDatabase?retryWrites=true&w=majority'
+const dbconnect = 'mongodb+srv://anand:Northeastern@cluster0.pstb3.mongodb.net/FSEDatabase?retryWrites=true&w=majority'
 mongoose.connect(dbconnect);
 
 const app = express();
