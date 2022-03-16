@@ -3,7 +3,7 @@ import TuitController from "./controllers/TuitController";
 import UserController from "./controllers/UserController";
 import mongoose from "mongoose";
 
-const dbconnect = 'mongodb+srv://anand:Northeastern@cluster0.pstb3.mongodb.net/FSEDatabase?retryWrites=true&w=majority'
+const dbconnect = 'mongodb+srv://anandbr:anandbr@cluster0.pstb3.mongodb.net/FSEDatabase2?retryWrites=true&w=majority'
 mongoose.connect(dbconnect);
 
 const app = express();
@@ -19,5 +19,4 @@ const userController = UserController.getInstance(app)
 const tuitController = TuitController.getInstance(app)
 
 const PORT = 4000;
-
 app.listen(process.env.PORT || PORT);
